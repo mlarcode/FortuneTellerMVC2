@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FortuneTellerMVC2ModelStoreContainer" CdmEntityContainer="FortuneTellerMVC2Entities">
+    <EntitySetMapping Name="Colors">
+      <EntityTypeMapping TypeName="FortuneTellerMVC2Model.Color">
+        <MappingFragment StoreEntitySet="Colors">
+          <ScalarProperty Name="FavoriteColorsID" ColumnName="FavoriteColorsID" />
+          <ScalarProperty Name="Color1" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="FortuneTellerMVC2Model.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="BirthMonth" ColumnName="BirthMonth" />
+          <ScalarProperty Name="FavoriteColors" ColumnName="FavoriteColors" />
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="NumberOfSiblings" ColumnName="NumberOfSiblings" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Months">
+      <EntityTypeMapping TypeName="FortuneTellerMVC2Model.Month">
+        <MappingFragment StoreEntitySet="Months">
+          <ScalarProperty Name="BirthMonthID" ColumnName="BirthMonthID" />
+          <ScalarProperty Name="Month1" ColumnName="Month" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
